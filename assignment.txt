@@ -1,0 +1,36 @@
+1) 1) O(1) because time does not change
+   2) O(n) because you need to talk to each person
+
+2) O(1) there is only one value, time is independent
+
+3) O(n^2) nested loops
+
+4) O(n) runtime is proportional to size
+
+5) O(n) runtime is proportional to size
+
+6) O(n^2) nested loops
+
+7) This algorithm returns an array of the fibonacci sequence. O(n) runtime is linear, as it needs to go through the entire array to find result.
+
+8) O(log(n)) cuts amount of items to search in half
+
+9) O(1) grabs one item from array, no matter the length
+
+10) This algorithm returns prime numbers. O(n) loops through until it finds a prime number.
+
+13) 1)
+    2)
+    3)
+    4)
+    5)
+    6)
+    7)
+
+14) 1)
+    2)
+    3)
+    4)
+    5)
+    6)
+    7)
