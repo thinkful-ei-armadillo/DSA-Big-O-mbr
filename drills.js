@@ -1,10 +1,18 @@
 // 11. Tower of Hanoi
 
-function hanoi(){
-  // :thinking:
+function hanoi(discs, src, des, temp){
+  if(discs === 1){
+    console.log(`Move disc 1 from ${src} to ${des}.`);
+  }
+  else{
+    hanoi(discs - 1, src, temp, des);
+    console.log(`Move disc ${discs} from ${src} to ${des}.`);
+    hanoi(1, src, des, temp);
+  }
+
 }
 
-console.log(hanoi(5, 'A', 'B', 'C'));
+console.log(hanoi(4, 'A', 'C', 'B'));
 
 // 12. Iterative version of recursion drills
 
@@ -20,27 +28,43 @@ function countSheep(num){
 
 // 2
 function powerCalculator(base, exp){
-  return base ** exp;
+  let product;
+  for(let i = 0; i < exp; i++){
+    product *= base;
+  }
+  return product;
 }
 
 // 3
 function reverse(str){
-  let split = str.split('');
-  let reverse = split.reverse();
-  let join = reverse.join('');
-  return join;
+  let rev = '';
+  for(let i = str.length - 1; i >= 0; i--){
+    rev += str[i];
+  }
+  return rev;
 }
 
 // 4
 function trianglarNum(num){
-  return num * (num + 1) / 2
+  let sum;
+  for(let i = 1; i <= num; i++){
+    sum = i * (i + 1) / 2;
+  }
+  return sum;
 }
 
 // 5
-function splitter(str){
-  let split = str.split('/');
-  let join = split.join('');
-  return join;
+function splitter(str, delim){
+  let newStr = '';
+  for(let i = 0; i < str.length; i++){
+    if(str[i] === delim){
+      newStr += '';
+    }
+    else{
+      newStr += str[i];
+    }
+  }
+  return newStr;
 }
 
 // 6

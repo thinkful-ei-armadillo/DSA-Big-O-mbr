@@ -19,18 +19,20 @@
 
 10) This algorithm returns prime numbers. O(n) loops through until it finds a prime number.
 
-13) 1)
-    2)
-    3)
-    4)
-    5)
-    6)
-    7)
+13) 1) O(n) because loop is dependent on number of sheep
+    2) O(n) because loop is dependent on number of exponent
+    3) O(n) because loop is dependent on length of string
+    4) O(n) because loop is dependent on number of input
+    5) O(n) because loop is dependent on length of string
+    6) O(n) because loop is dependent on number of input
+    7) O(n) because input is limiting factor
 
-14) 1)
-    2)
-    3)
-    4)
-    5)
-    6)
-    7)
+14) 2) isEven has constant run time complexity (O(1))
+    3) areYouHere has polynomial run time complexity (O(n^2))
+    4) doubleArrayValues has linear run time complexity (O(n))
+    5) naiveSearch has linear run time complexity (O(n))
+    6) createPairs has polynomial run time complexity (O(n^2))
+    7) compute has linear run time complexity (O(n))
+    8) efficientSearch has logarithmic run time complexity (O(log n))
+    9) findRandomElement has constant run time complexity (O(1)).
+    10) isWhat has linear run time complexity (O(n))
